@@ -1,0 +1,33 @@
+@startuml
+
+
+    class UpdatePinService {
+        - accountDataService: AccountDataService
+        - transactionService: TransactionService
+        - loginService: LoginService
+        - login: Login
+        + updatePin(pin: int): String
+    }
+}
+
+TechLiftProject.ATMManagementSystem.Services -> TechLiftProject.ATMManagementSystem.Models : import
+TechLiftProject.ATMManagementSystem.Services -> jakarta.transaction : import
+TechLiftProject.ATMManagementSystem.Services -> org.springframework.beans.factory.annotation : import
+TechLiftProject.ATMManagementSystem.Services -> org.springframework.stereotype : import
+
+note right of UpdatePinService: Service Annotation
+
+UpdatePinService -> AccountDataService : <<Autowired>>
+UpdatePinService -> TransactionService : <<Autowired>>
+UpdatePinService -> LoginService : <<Autowired>>
+
+UpdatePinService -> Login : login
+UpdatePinService -> AccountDataService : accountDataService
+UpdatePinService -> TransactionService : transactionService
+UpdatePinService -> LoginService : loginService
+
+UpdatePinService --> AccountDataService : passToAccountData()
+UpdatePinService --> LoginService : exit()
+UpdatePinService --> TransactionService : recordTransaction()
+
+@enduml
