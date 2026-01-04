@@ -95,7 +95,7 @@ Before you begin, ensure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/ATM-Management-System.git
+git clone https://github.com/engr-muhammad-mansoor/ATM-Management-System.git
 cd ATM-Management-System
 ```
 
@@ -409,8 +409,8 @@ This project is part of the TechLift Project portfolio.
 
 ## 👨‍💻 Author
 
-**TechLift Project**
-- GitHub: [@yourusername](https://github.com/yourusername)
+**engr-muhammad-mansoor**
+- GitHub: [@engr-muhammad-mansoor](https://github.com/engr-muhammad-mansoor)
 
 ## 🙏 Acknowledgments
 
